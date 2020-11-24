@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoC :: Base App</title>
+    <base href="/">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="l-app fragment">
+        <nav class="l-header fragment">
+            <a class="l-header__link" href="./produtos">Produtos</a>
+            <a class="l-header__link" href="./ofertas">Ofertas</a>
+        </nav>
+        <div class="l-product fragment">
+            <div id="router-outled"></div>
+        </div>
+    </div>
+    
+    <!-- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.9.1/zone.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/custom-elements-es5-adapter.js"></script>
+    <!-- Registro dos micro apps -->
+    <script src="http://localhost:5001/main.js" async></script>
+    <script src="http://localhost:5002/main.js" async></script>
+    <!-- -->
+    <script src="./router.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+</html>
